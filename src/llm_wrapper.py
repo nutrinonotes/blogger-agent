@@ -31,7 +31,7 @@ def llm_complete(prompt: str, temperature: float = 0.2, max_tokens: int = 800, m
         resp = client.chat.completions.create(
             model=model,
             messages=[
-                {"role": "system", "content": "You are an expert writer and researcher."},
+                {"role": "system", "content": "You are an expert writer."},
                 {"role": "user", "content": prompt}
             ],
             temperature=temperature,

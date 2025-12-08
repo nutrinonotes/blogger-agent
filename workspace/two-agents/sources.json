@@ -1,1 +1,72 @@
-[]
+[
+  {
+    "id": "S1",
+    "title": "Nuclear 101 -- ANS / About Nuclear / Professional Development / Nuclear ...",
+    "url": "https://www.ans.org/nuclear101/",
+    "snippet": "This course is designed for you! TheNuclear101course is your opportunity to gain an in-depth understanding of the essentials ofnuclearenergy and engineering from the field's leading experts and instructors. The 5-day course provides 32 hours of learning and covers a broad range ofnuclearscience and technology topics.",
+    "confidence": "medium"
+  },
+  {
+    "id": "S2",
+    "title": "PDFANS Nuclear 101 Course: - ncsp.llnl.gov",
+    "url": "https://ncsp.llnl.gov/sites/ncsp/files/2024-12/88_invited_talk_-_ans_nuclear_101_course_updates_and_moving_forward.pdf",
+    "snippet": "Nuclear101- Course Objectives Explain the fundamentals related tonuclearenergy Discuss the power andnon-power applications ofnuclearenergy Describe the different stages of thenuclearfuel cycle Recognize the regulations and industry codes applicable to thenuclearindustry Understand the basics of radiation detection and radiation safety",
+    "confidence": "medium"
+  },
+  {
+    "id": "S3",
+    "title": "Nuclear 101: How this Sold Out Course was Built for Beginners",
+    "url": "https://www.nakednuclear.com/nuclear-101-how-this-sold-out-course-was-built-for-beginners/",
+    "snippet": "TheNuclear101course was created to make the industry more accessible and train newcomers beyond traditional four-year degrees. Course attendees have included museum staff, communicators, welders, and logistics professionals\u2014proving thenuclearworkforce is broader than you might expect.",
+    "confidence": "medium"
+  },
+  {
+    "id": "S4",
+    "title": "Understanding Nuclear Energy with Nuclear 101 Conversation",
+    "url": "https://news.stonybrook.edu/university/understanding-nuclear-energy-with-c4es-nuclear-101-conversation/",
+    "snippet": "TheNuclear101presentation addressed the resurgence ofnuclearpower plants to address the growingneedfor power, including the dramaticneedfor electricity to run large artificial intelligence driven data centers, the science behindnuclearreactors, and the challenges of public perception ofnuclearpower.",
+    "confidence": "medium"
+  },
+  {
+    "id": "S5",
+    "title": "Nuclear Energy Basics - Department of Energy",
+    "url": "https://www.energy.gov/ne/listings/nuclear-energy-basics",
+    "snippet": "The articles below provide general information on all things nuclear\u2014ranging fromnuclearenergy basics and STEM content to featured industry jobs and national lab capabilities that are used to accelerate research and development innuclearenergy.",
+    "confidence": "medium"
+  },
+  {
+    "id": "S6",
+    "title": "NN Asks: What did you learn from ANS's Nuclear 101?",
+    "url": "https://www.ans.org/news/2025-09-15/article-7323/inn-asksi-what-did-you-learn-from-anss-nuclear-101/",
+    "snippet": "AlthoughNuclear101is presented as an introduction, the speed required to get through the content does not allow much time to catch up if you get behind. Commercialnuclearpower is probably one of the most challenging industries in the world, so even an introductory course is going to be difficult.",
+    "confidence": "medium"
+  },
+  {
+    "id": "S7",
+    "title": "Stony Brook University - Nuclear 101 (for the Non-Scientist)",
+    "url": "https://calendar.stonybrook.edu/event/nuclear-101-for-the-non-scientist/",
+    "snippet": "Guest Speakers: Drs. Jason Trelewicz and Lance Snead Drs. Trelewicz and Snead will provide an overview ofnuclearpower and energy for thenon-scientist.",
+    "confidence": "medium"
+  },
+  {
+    "id": "S8",
+    "title": "PDFNUCLEAR SCIENCE - Lawrence Berkeley National Laboratory",
+    "url": "https://www2.lbl.gov/abc/wallchart/teachersguide/pdf/NuclearTeachersGuide-2019.pdf",
+    "snippet": "nexpected ways.Nuclearscience continues to have a major impact in other areas of science, technology, medicine, energy production and na ional security.Nucleardiagnostic techniques find many applications in dating archeological objects, in materials research, and in monitoring changes in",
+    "confidence": "medium"
+  },
+  {
+    "id": "S9",
+    "title": "NRC's Science 101 | Nuclear Regulatory Commission",
+    "url": "https://www.nrc.gov/reading-rm/basic-ref/students/science101",
+    "snippet": "NRC's Science101How does anuclearreaction work? What is radiation? How do you enrich uranium? These and other questions are answered in this basic science series called NRC's Science101. These are all written by NRC experts and all originally ran on the agency's blog, but they are reproduced here in PDF for easy downloading. Topics: What ...",
+    "confidence": "medium"
+  },
+  {
+    "id": "S10",
+    "title": "Nuclear 101: How this Sold Out Course was Built for Beginners",
+    "url": "https://www.listennotes.com/podcasts/naked-nuclear/nuclear-101-how-this-sold-RWhcxi5Yt8T/",
+    "snippet": "ABOUT THIS EPISODE In this episode of NakedNuclear, Danielle sits down with Dr. Rebecca Steinman, PhD and the AmericanNuclearSociety (ANS) to exploreNuclear101\u2014a hands-on, introductory course designed not just for engineers, but for anyone curious about thenuclearenergy industry.",
+    "confidence": "medium"
+  }
+]

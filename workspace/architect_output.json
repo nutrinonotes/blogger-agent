@@ -1,0 +1,584 @@
+{
+    "pillars": [
+        {
+            "id": "P1",
+            "name": "Nuclear Foundations",
+            "description": "Core concepts anyone should know: physics basics, reactor anatomy, and the fuel cycle.",
+            "priority": 10
+        },
+        {
+            "id": "P2",
+            "name": "Reactor Technologies & SMRs",
+            "description": "From traditional large reactors to SMRs and advanced reactor concepts — tech tradeoffs and timelines.",
+            "priority": 9
+        },
+        {
+            "id": "P3",
+            "name": "Regulation, Safety & Policy (India-focused)",
+            "description": "How regulation works in India (and globally), licensing, safety regimes, and timelines for private participation.",
+            "priority": 10
+        },
+        {
+            "id": "P4",
+            "name": "Business Models & Financing",
+            "description": "Commercial opportunities: project development, services, equipment, financing, and offtake models.",
+            "priority": 9
+        },
+        {
+            "id": "P5",
+            "name": "Supply Chain, Manufacturing & Operations",
+            "description": "What it takes to build, operate, inspect, and maintain nuclear infrastructure — vendors, fabrication, and robotics.",
+            "priority": 8
+        }
+    ],
+    "posts": [
+        {
+            "id": "T1",
+            "pillar_id": "P1",
+            "title": "Nuclear 101: What Non-Scientists Need to Know",
+            "short_blurb": "A clear, jargon-light primer on fission, fuel cycles, and basic reactor parts.",
+            "target_audience": [
+                "learner"
+            ],
+            "seo_keyword": "nuclear energy basics",
+            "secondary_keywords": [
+                "what is nuclear energy",
+                "reactor parts"
+            ],
+            "estimated_read_time_min": 8,
+            "research_depth": "low",
+            "learning_objectives": [
+                "Explain fission simply",
+                "Identify main reactor components",
+                "Understand basic terms (core, coolant, containment)"
+            ],
+            "required_sections": [
+                "Hook",
+                "What is nuclear energy?",
+                "Core reactor components explained",
+                "Common misconceptions",
+                "Action plan for curious learners"
+            ],
+            "suggested_visuals": [
+                {
+                    "type": "diagram",
+                    "purpose": "reactor anatomy annotated"
+                }
+            ],
+            "suggested_audio_clip_minutes": 4,
+            "suggested_sources": [
+                {
+                    "name": "IAEA basics",
+                    "why": "authoritative primer",
+                    "preferred_url": "https://www.iaea.org"
+                }
+            ],
+            "priority": 10,
+            "publish_timing": "week-1"
+        },
+        {
+            "id": "T2",
+            "pillar_id": "P1",
+            "title": "The Nuclear Fuel Cycle — From Uranium to Waste",
+            "short_blurb": "Stepwise walkthrough of mining, enrichment, fuel fabrication, reactor use, and waste management.",
+            "target_audience": [
+                "learner",
+                "entrepreneur"
+            ],
+            "seo_keyword": "nuclear fuel cycle",
+            "secondary_keywords": [
+                "uranium enrichment",
+                "spent fuel management"
+            ],
+            "estimated_read_time_min": 10,
+            "research_depth": "medium",
+            "learning_objectives": [
+                "Map the fuel cycle stages",
+                "Spot business nodes (fuel fabrication, transport, storage)",
+                "Understand waste categories"
+            ],
+            "required_sections": [
+                "Overview",
+                "Mining & enrichment",
+                "Fuel fabrication",
+                "Spent fuel & waste",
+                "Business opportunities"
+            ],
+            "suggested_visuals": [
+                {
+                    "type": "static_chart",
+                    "purpose": "fuel flow Sankey diagram"
+                }
+            ],
+            "suggested_audio_clip_minutes": 6,
+            "suggested_sources": [
+                {
+                    "name": "NPCIL / IAEA material",
+                    "why": "India context & global standard",
+                    "preferred_url": ""
+                }
+            ],
+            "priority": 9,
+            "publish_timing": "week-2"
+        },
+        {
+            "id": "T3",
+            "pillar_id": "P2",
+            "title": "SMRs Explained: What Entrepreneurs Should Know",
+            "short_blurb": "Small modular reactors — technical traits, timelines, and where startups fit.",
+            "target_audience": [
+                "entrepreneur"
+            ],
+            "seo_keyword": "small modular reactors india",
+            "secondary_keywords": [
+                "SMR startups",
+                "SMR economics"
+            ],
+            "estimated_read_time_min": 9,
+            "research_depth": "high",
+            "learning_objectives": [
+                "Describe SMR classes",
+                "Assess manufacturability & supply chain needs",
+                "Identify entrepreneurial entry points"
+            ],
+            "required_sections": [
+                "What is an SMR?",
+                "Tech variants (light-water, microreactors)",
+                "Manufacturing & modularization",
+                "Business cases & hurdles",
+                "Action plan for builders"
+            ],
+            "suggested_visuals": [
+                {
+                    "type": "diagram",
+                    "purpose": "modular factory-to-site flow"
+                },
+                {
+                    "type": "animation",
+                    "purpose": "module assembly sequence (short)"
+                }
+            ],
+            "suggested_audio_clip_minutes": 6,
+            "suggested_sources": [
+                {
+                    "name": "IAEA SMR report",
+                    "why": "technical & policy guidance",
+                    "preferred_url": ""
+                }
+            ],
+            "priority": 10,
+            "publish_timing": "week-3"
+        },
+        {
+            "id": "T4",
+            "pillar_id": "P3",
+            "title": "How Nuclear Regulation Works in India (and Why It Matters)",
+            "short_blurb": "A practical guide to AERB, NPCIL interfaces, licensing steps, and timelines entrepreneurs must know.",
+            "target_audience": [
+                "entrepreneur",
+                "policy"
+            ],
+            "seo_keyword": "nuclear regulation india",
+            "secondary_keywords": [
+                "AERB licensing",
+                "npcil private participation"
+            ],
+            "estimated_read_time_min": 10,
+            "research_depth": "high",
+            "learning_objectives": [
+                "Map the licensing process",
+                "Understand regulatory timelines",
+                "Know where private firms interact with regulators"
+            ],
+            "required_sections": [
+                "Regulatory bodies overview",
+                "Licensing stages",
+                "Compliance & safety expectations",
+                "How entrepreneurs engage",
+                "Action plan (contacts & reading)"
+            ],
+            "suggested_visuals": [
+                {
+                    "type": "static_chart",
+                    "purpose": "licensing timeline flowchart"
+                }
+            ],
+            "suggested_audio_clip_minutes": 7,
+            "suggested_sources": [
+                {
+                    "name": "AERB website",
+                    "why": "primary regulatory source",
+                    "preferred_url": ""
+                }
+            ],
+            "priority": 10,
+            "publish_timing": "week-4"
+        },
+        {
+            "id": "T5",
+            "pillar_id": "P4",
+            "title": "Where the Money Is: Business Models in Nuclear",
+            "short_blurb": "Project dev, equipment suppliers, services, fuel services, financing, and revenue models.",
+            "target_audience": [
+                "entrepreneur",
+                "investor"
+            ],
+            "seo_keyword": "nuclear business models",
+            "secondary_keywords": [
+                "project financing nuclear",
+                "nuclear services startups"
+            ],
+            "estimated_read_time_min": 10,
+            "research_depth": "high",
+            "learning_objectives": [
+                "List profitable business nodes",
+                "Understand CAPEX/OPEX dynamics",
+                "Explore financing pathways & risk mitigation"
+            ],
+            "required_sections": [
+                "Business model taxonomy",
+                "Case studies & comparators",
+                "Financing instruments",
+                "Action plan for entrepreneurs"
+            ],
+            "suggested_visuals": [
+                {
+                    "type": "static_chart",
+                    "purpose": "capex vs opex illustrative chart"
+                }
+            ],
+            "suggested_audio_clip_minutes": 8,
+            "suggested_sources": [
+                {
+                    "name": "World Nuclear Association",
+                    "why": "market & finance context",
+                    "preferred_url": ""
+                }
+            ],
+            "priority": 9,
+            "publish_timing": "week-5"
+        },
+        {
+            "id": "T6",
+            "pillar_id": "P5",
+            "title": "Robotics, Inspection & Digital Twins in Nuclear Operations",
+            "short_blurb": "How robotics, AI, and digital twins reduce costs and risks in plant operations and maintenance.",
+            "target_audience": [
+                "entrepreneur",
+                "learner"
+            ],
+            "seo_keyword": "nuclear robotics inspection",
+            "secondary_keywords": [
+                "digital twin nuclear",
+                "non-destructive testing nuclear"
+            ],
+            "estimated_read_time_min": 9,
+            "research_depth": "medium",
+            "learning_objectives": [
+                "Explain common robotics use-cases",
+                "Map product-market fit for inspection startups",
+                "Understand data needs for digital twins"
+            ],
+            "required_sections": [
+                "Inspection challenges",
+                "Robotics & NDT methods",
+                "Data & digital twins",
+                "Business opportunities"
+            ],
+            "suggested_visuals": [
+                {
+                    "type": "animation",
+                    "purpose": "robot inspection sequence"
+                }
+            ],
+            "suggested_audio_clip_minutes": 6,
+            "suggested_sources": [
+                {
+                    "name": "industry whitepapers",
+                    "why": "applied tech context",
+                    "preferred_url": ""
+                }
+            ],
+            "priority": 8,
+            "publish_timing": "week-6"
+        },
+        {
+            "id": "T7",
+            "pillar_id": "P2",
+            "title": "Advanced Reactors & Fuel Types (Fast Reactors, Thorium)",
+            "short_blurb": "Survey of non-LWR reactors and their fuel cycles including India’s thorium interest.",
+            "target_audience": [
+                "learner",
+                "entrepreneur"
+            ],
+            "seo_keyword": "fast reactors thorium",
+            "secondary_keywords": [
+                "advanced reactors",
+                "thorium cycle"
+            ],
+            "estimated_read_time_min": 11,
+            "research_depth": "high",
+            "learning_objectives": [
+                "Distinguish reactor classes",
+                "Identify technical & policy timelines",
+                "Spot investment risk vs reward"
+            ],
+            "required_sections": [
+                "Overview of advanced reactors",
+                "Thorium/fast reactor fuel cycles",
+                "Technical readiness & timelines",
+                "Entrepreneurial implications"
+            ],
+            "suggested_visuals": [
+                {
+                    "type": "diagram",
+                    "purpose": "fuel flow for thorium vs uranium"
+                }
+            ],
+            "suggested_audio_clip_minutes": 7,
+            "suggested_sources": [
+                {
+                    "name": "research papers",
+                    "why": "technical depth",
+                    "preferred_url": ""
+                }
+            ],
+            "priority": 8,
+            "publish_timing": "month-2"
+        },
+        {
+            "id": "T8",
+            "pillar_id": "P4",
+            "title": "Project Development in Nuclear: From FID to Operations",
+            "short_blurb": "Stages of a nuclear power project and the developer’s role, timelines, and risk allocation.",
+            "target_audience": [
+                "entrepreneur",
+                "investor"
+            ],
+            "seo_keyword": "nuclear project development",
+            "secondary_keywords": [
+                "FID nuclear",
+                "project developer nuclear"
+            ],
+            "estimated_read_time_min": 10,
+            "research_depth": "high",
+            "learning_objectives": [
+                "Explain project lifecycle",
+                "Understand contractual frameworks",
+                "Assess risk allocation models"
+            ],
+            "required_sections": [
+                "Lifecycle stages",
+                "Developer responsibilities",
+                "Contract & financing models",
+                "Action plan for early-stage developers"
+            ],
+            "suggested_visuals": [
+                {
+                    "type": "static_chart",
+                    "purpose": "project timeline vs milestones"
+                }
+            ],
+            "suggested_audio_clip_minutes": 8,
+            "suggested_sources": [
+                {
+                    "name": "case studies",
+                    "why": "practical models",
+                    "preferred_url": ""
+                }
+            ],
+            "priority": 9,
+            "publish_timing": "month-2"
+        },
+        {
+            "id": "T9",
+            "pillar_id": "P5",
+            "title": "Supply Chain & Manufacturing for Nuclear Components",
+            "short_blurb": "Quality, standards, and manufacturing scale: what vendors must deliver for reactors and modules.",
+            "target_audience": [
+                "entrepreneur",
+                "engineer"
+            ],
+            "seo_keyword": "nuclear manufacturing supply chain",
+            "secondary_keywords": [
+                "nuclear vendors",
+                "fabrication standards"
+            ],
+            "estimated_read_time_min": 9,
+            "research_depth": "medium",
+            "learning_objectives": [
+                "Understand key vendor categories",
+                "Know certification & QA expectations",
+                "Spot manufacturing business opportunities"
+            ],
+            "required_sections": [
+                "Vendor landscape",
+                "Standards & QA",
+                "Scaling manufacturing",
+                "Action plan for suppliers"
+            ],
+            "suggested_visuals": [
+                {
+                    "type": "diagram",
+                    "purpose": "supply chain map"
+                }
+            ],
+            "suggested_audio_clip_minutes": 6,
+            "suggested_sources": [
+                {
+                    "name": "industry standards bodies",
+                    "why": "certification info",
+                    "preferred_url": ""
+                }
+            ],
+            "priority": 7,
+            "publish_timing": "month-3"
+        },
+        {
+            "id": "T10",
+            "pillar_id": "P3",
+            "title": "Safety Culture, Emergency Planning & Public Engagement",
+            "short_blurb": "Outline of safety culture, emergency preparedness, and how entrepreneurs should communicate with stakeholders.",
+            "target_audience": [
+                "learner",
+                "entrepreneur",
+                "policy"
+            ],
+            "seo_keyword": "nuclear safety culture",
+            "secondary_keywords": [
+                "emergency planning nuclear",
+                "public engagement nuclear"
+            ],
+            "estimated_read_time_min": 9,
+            "research_depth": "medium",
+            "learning_objectives": [
+                "Explain safety culture basics",
+                "Identify public concerns & engagement tactics",
+                "Understand emergency planning basics"
+            ],
+            "required_sections": [
+                "What is safety culture?",
+                "Emergency planning basics",
+                "Public engagement best practices",
+                "Actionable steps for startups"
+            ],
+            "suggested_visuals": [
+                {
+                    "type": "static_chart",
+                    "purpose": "decision tree for stakeholder engagement"
+                }
+            ],
+            "suggested_audio_clip_minutes": 6,
+            "suggested_sources": [
+                {
+                    "name": "AERB/IAEA guidance",
+                    "why": "safety frameworks",
+                    "preferred_url": ""
+                }
+            ],
+            "priority": 8,
+            "publish_timing": "month-3"
+        },
+        {
+            "id": "T11",
+            "pillar_id": "P1",
+            "title": "Metrics that Matter: Cost, Capacity Factor, and LCOE Explained",
+            "short_blurb": "Key project and technology metrics entrepreneurs and investors should track.",
+            "target_audience": [
+                "entrepreneur",
+                "investor"
+            ],
+            "seo_keyword": "nuclear lcoe capacity factor",
+            "secondary_keywords": [
+                "nuclear economics metrics",
+                "project metrics nuclear"
+            ],
+            "estimated_read_time_min": 8,
+            "research_depth": "medium",
+            "learning_objectives": [
+                "Define capacity factor & LCOE",
+                "Show how they influence project economics",
+                "Provide rough benchmark numbers and ranges"
+            ],
+            "required_sections": [
+                "Definitions",
+                "Why they matter",
+                "Benchmarks & ranges",
+                "Action plan for financial modelling"
+            ],
+            "suggested_visuals": [
+                {
+                    "type": "static_chart",
+                    "purpose": "LCOE vs CAPEX illustration"
+                }
+            ],
+            "suggested_audio_clip_minutes": 5,
+            "suggested_sources": [
+                {
+                    "name": "World Bank / WNA summaries",
+                    "why": "benchmark sources",
+                    "preferred_url": ""
+                }
+            ],
+            "priority": 8,
+            "publish_timing": "month-4"
+        },
+        {
+            "id": "T12",
+            "pillar_id": "P4",
+            "title": "How to Pilot a Nuclear-Adjacent Startup: Service Offerings to Start With",
+            "short_blurb": "Low-risk services (e.g., inspection, software, simulation, logistics) that startups can realistically offer early on.",
+            "target_audience": [
+                "entrepreneur"
+            ],
+            "seo_keyword": "nuclear startup ideas",
+            "secondary_keywords": [
+                "nuclear services startups",
+                "inspection services nuclear"
+            ],
+            "estimated_read_time_min": 9,
+            "research_depth": "medium",
+            "learning_objectives": [
+                "List low-barrier service ideas",
+                "Show go-to-market strategies",
+                "Discuss regulation & partner channels"
+            ],
+            "required_sections": [
+                "Opportunity taxonomy",
+                "MVP examples",
+                "Regulatory & partner checklists",
+                "Action plan (first 90 days)"
+            ],
+            "suggested_visuals": [
+                {
+                    "type": "diagram",
+                    "purpose": "go-to-market funnel for service startups"
+                }
+            ],
+            "suggested_audio_clip_minutes": 6,
+            "suggested_sources": [
+                {
+                    "name": "industry analyst notes",
+                    "why": "market resonance",
+                    "preferred_url": ""
+                }
+            ],
+            "priority": 9,
+            "publish_timing": "month-4"
+        }
+    ],
+    "editorial_calendar": [
+        "T1",
+        "T2",
+        "T3",
+        "T4",
+        "T5",
+        "T6",
+        "T7",
+        "T8",
+        "T9",
+        "T10",
+        "T11",
+        "T12"
+    ]
+}
