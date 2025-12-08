@@ -7,13 +7,15 @@ def compose_substack_markdown(final_md:str, visuals:list, audio_url:str, title:s
     # embed visuals
     for v in visuals:
         md += f"\n\n![figure]({v})\n"
-    if audio_url:
+    if audio_url and os.path.exists(audio_url):
         md += f"\n\n<audio controls src=\"{audio_url}\"></audio>\n"
+    elif audio_url:
+        md += f"\n\n<!-- audio file provided but not found: {audio_url} -->\n"
     md += "\n\n---\n*Author: Aviran Deshmara*\n"
     return md
 
 def export_manifest(slug, md, out_dir="out"):
-    os.makedirs(out_dir, exist_ok=True)
+    os.makedirs(out_dir, exist_ok=True) # ensure_dir(out_dir)
     path = os.path.join(out_dir, f"{slug}.md")
     with open(path, "w", encoding="utf-8") as f:
         f.write(md)
