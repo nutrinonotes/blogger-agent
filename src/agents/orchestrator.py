@@ -59,7 +59,7 @@ def run_pipeline(seed_title=None, slug="post1"):
     else:
         research_query = "nuclear energy basics"
 
-    sources = collect_sources(research_query)
+    sources = collect_sources(research_query, max_results=7)
     write_json(f"workspace/{slug}/sources.json", sources)
 
     print("Drafting...")
@@ -81,9 +81,17 @@ def run_pipeline(seed_title=None, slug="post1"):
     verifier_report = verify_with_search(draft_md)
     write_json(f"workspace/{slug}/verifier.json", verifier_report)
 
-    print("Editing...")
-    edited = edit_draft(draft_md, verifier_report)
-    final_md = edited.get("edited", draft_md)
+    score = verifier_report.get("score", 0)
+    safety_flags = verifier_report.get("safety_flags", [])
+    
+    # Optimization: Skip editor if score is high (>85) and no safety flags
+    if score > 85 and not safety_flags:
+         print(f"Draft verification score {score} is high. Skipping Editor step to save cost.")
+         final_md = draft_md
+    else:
+         print(f"Editing (Score: {score})...")
+         edited = edit_draft(draft_md, verifier_report)
+         final_md = edited.get("edited", draft_md)
     ensure_dir(f"workspace/{slug}")
     with open(f"workspace/{slug}/final.md","w",encoding="utf-8") as f:
         f.write(final_md)
@@ -100,7 +108,8 @@ def run_pipeline(seed_title=None, slug="post1"):
     # Optional audio step - will error if ELEVENLABS_API_KEY not set; orchestrator will skip if not present
     print("Generating audio (TTS)...")
     audio_path = None
-    skip_audio = os.getenv("SKIP_AUDIO", "false").lower() in ("1","true","yes")
+    # Optimization: Default SKIP_AUDIO to true to save significant cost
+    skip_audio = os.getenv("SKIP_AUDIO", "true").lower() in ("1","true","yes")
     if not skip_audio and os.getenv("ELEVENLABS_API_KEY"):
         try:
             audio_dir = f"workspace/{slug}/audio"

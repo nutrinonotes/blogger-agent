@@ -1,14 +1,5 @@
-from src.llm_wrapper import llm_complete
 import re, json
 from src.utils.web_utils import search_duckduckgo_snippets
-
-VERIFIER_PROMPT = """
-You are Verifier Agent. Input: draft markdown. Task:
-1) Extract numbered factual claims.
-2) For each claim perform web search and return status: Verified/Unverified/Contradicted with 1 URL and 1-sentence evidence.
-3) Identify high-risk safety phrases (operational instructions). Flag as safety_high.
-Return JSON: {{claims:[{{id, claim, status, url, evidence}}], safety_flags:[], score:0-100}}.
-"""
 
 def verify_with_search(draft_md: str) -> dict:
     # Step 1: extract candidate factual sentences (naive)

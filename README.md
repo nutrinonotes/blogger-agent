@@ -1,83 +1,134 @@
-# NuclearBlogAgent  
+# NuclearBlogAgent
 *A multi-agent system for generating high-quality, research-backed, visual-rich, audio-enabled technical blogs.*
 
 ---
 
-## 🚀 Project Overview
+## 👋 Hi — I’m **Aviran Deshmara**
 
-**NuclearBlogAgent** is an automated, Python-driven agent architecture for writing, verifying, illustrating, and narrating blog posts. It orchestrates specialized AI agents to take a topic from concept to published artifact.
+This repository contains my ongoing work in building an automated, Python-driven agent architecture for writing, verifying, illustrating, and narrating blog posts — starting with nuclear energy, deeptech, and adjacent domains.
 
-### 🤖 The Agent Team
-
-1.  **Architect Agent**: Creates topic pillars and editorial calendars.
-2.  **Research Agent**: Scrapes and summarizes authoritative sources (duckduckgo, academic snippets).
-3.  **Draft Agent**: Writes full blog drafts with citation placeholders.
-4.  **Verifier Agent**: Checks facts against web sources and flags safety issues.
-5.  **Editor Agent**: Refines tone, clarity, and incorporates verifier feedback.
-6.  **Visuals Agent**: Generates charts (Matplotlib) and animations (MP4/GIF).
-7.  **Audio Agent**: Synthesizes podcast narration (ElevenLabs/OpenAI TTS).
-8.  **Publisher Agent**: Formats final Markdown for platforms like Substack.
+I come from a non-nuclear background and I’m learning the field from first principles.  
+This project is part of that journey: building tools that can help anyone explore complex topics with clarity, accuracy, and creativity.
 
 ---
 
-## 🛠️ Installation & Usage
+# 🚀 Project Overview
 
-### 1. Prerequisites
-- Python 3.10+
-- OpenAI API Key
-- (Optional) ElevenLabs API Key for high-quality audio
+**NuclearBlogAgent** is a multi-agent framework with these goals:
 
-### 2. Setup
-Clone the repository and install dependencies:
-```bash
-git clone https://github.com/nutrinonotes/blogger-agent.git
-cd blogger-agent
-python -m venv venv
-# Windows
-.\venv\Scripts\activate
-# Mac/Linux
-source venv/bin/activate
+### 🧠 **1. Architect Agent**
+Creates topic pillars, post outlines, learning paths, and an editorial calendar.
 
-pip install -r requirements.txt
-```
+### 🔍 **2. Research Agent**
+Gathers authoritative sources (IAEA, AERB, NPCIL, academic papers, reputable journalism) and extracts structured factual snippets.
 
-### 3. Configuration
-Create a `.env` file in the root directory:
-```env
-OPENAI_API_KEY=sk-your-key-here
-ELEVENLABS_API_KEY=your-key-here  # Optional
-```
+### ✍️ **3. Draft Agent**
+Writes the first full draft from the research package, with placeholders for citations, visuals, and animations.
 
-### 4. Run the Pipeline
-To generate a blog post about "Two Agents":
-```bash
-python -m src.agents.orchestrator
-```
+### ✅ **4. Verifier Agent**
+Independently checks factual claims, logical consistency, missing citations, tone, safety, and contradictions.
 
-The system will:
-1.  Research the topic.
-2.  Draft content.
-3.  Verify facts.
-4.  Edit the post.
-5.  Generate visuals (Charts & GIFs).
-6.  Save outputs to `workspace/`.
+### 🧹 **5. Editor Agent**
+Improves clarity, flow, voice, and correctness. Applies verifier feedback.
 
-### 5. Verify System Health
-Run the included check script to verify all dependencies and imports:
-```bash
-python check_system.py
-```
+### 🛡️ **6. Compliance Agent**
+Ensures posts avoid sensitive technical instructions or hazardous details — especially important for nuclear topics.
+
+### 🎨 **7. Visuals Agent**
+Generates:  
+- Static charts (matplotlib/plotly)  
+- Diagrams  
+- GIF and MP4 animations (matplotlib / manim)  
+- Visual specs for future media
+
+### 🎙️ **8. Audio Agent**
+Produces podcast-ready narration using TTS (OpenAI / ElevenLabs / offline fallback).  
+Outputs MP3 + transcript.
+
+### 🌐 **9. Publisher Agent**
+Formats final output for Substack:  
+- Markdown + HTML embeds  
+- Image/video hosting  
+- Audio player embeds  
+- SEO metadata
+
+### 📈 **10. Ops/Monitor Agent**
+Tracks performance, recomputes citations, and ensures quality over time.
 
 ---
 
-## 🧩 Tech Stack
+# 🧩 Tech Stack
 
--   **LangChain / OpenAI client**: LLM orchestration.
--   **BeautifulSoup**: Web research.
--   **Matplotlib / ImageIO**: Visuals and animations.
--   **ElevenLabs**: Audio synthesis.
--   **DuckDuckGo**: Search backend.
+- **Python 3.11+**  
+- **LangChain** for orchestration  
+- **OpenAI / web-enabled LLMs** for drafting & verification  
+- **matplotlib**, **imageio**, **ffmpeg-python**, **plotly**, **manim** for visuals  
+- **ElevenLabs / OpenAI TTS** for audio  
+- **boto3** (AWS S3) for hosting media assets  
+- **Obsidian** + Git workflow for drafts  
+- **Substack** for publishing  
 
+---
+
+# 📚 Goals of This Project
+
+- Build a *repeatable*, *verifiable*, *high-trust* writing pipeline.  
+- Make learning nuclear energy accessible to non-experts.  
+- Experiment with agents as co-writers, researchers, and editors.  
+- Publish posts with visuals, animations, and audio narration.  
+- Eventually extend this architecture into broader educational tooling.
+
+This repository will evolve continuously as I refine the workflow, prompts, tooling, and agents.
+
+---
+
+# 🛠️ Project Status
+
+- [x] Repository initialized  
+- [x] Identity & platform setup  
+- [ ] Architect Agent (in progress)  
+- [ ] Research Agent  
+- [ ] Draft Agent  
+- [ ] Verifier Agent  
+- [ ] Editor Agent  
+- [ ] Compliance Agent  
+- [ ] Visuals Agent  
+- [ ] Audio Agent  
+- [ ] Publisher Agent  
+- [ ] End-to-end pipeline  
+- [ ] Automated publishing  
+- [ ] First public release  
+
+---
+
+# 🗺️ Roadmap (High-level)
+
+### Phase 1 — Foundation  
+- Architect Agent  
+- Basic drafting  
+- Basic verification  
+- Static visuals  
+- Audio prototype
+
+### Phase 2 — Automations  
+- Structured research ingestion  
+- Visual spec language  
+- Social/post exports  
+- S3 media hosting  
+- Enhanced compliance checks
+
+### Phase 3 — Full Pipeline  
+- End-to-end automation  
+- Multi-format outputs  
+- Podcast feed generation  
+- Rich animations  
+- Improved editorial personalization
+
+---
+
+# 💬 Feedback / Collaboration
+
+If you're exploring similar agent architectures or working in nuclear, deeptech, or AI-driven publishing, I’d love to connect.
 ---
 
 ## 📝 License

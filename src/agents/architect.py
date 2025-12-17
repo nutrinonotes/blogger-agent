@@ -31,12 +31,11 @@ Return strictly valid JSON only (no extra commentary).
 """
 
 def generate_editorial_plan() -> dict:
-    resp = llm_complete(ARCHITECT_PROMPT, temperature=0.3, max_tokens=800)
-    # attempt to parse; if LLM returns text, try to extract JSON substring
+    # Use json_mode=True to ensure valid JSON and avoid retries
+    resp = llm_complete(ARCHITECT_PROMPT, temperature=0.3, max_tokens=800, json_mode=True)
     try:
         data = json.loads(resp)
-    except Exception:
-        # fallback: ask LLM to only return JSON
-        resp2 = llm_complete(ARCHITECT_PROMPT+"\nReturn only valid JSON.", temperature=0.1)
-        data = json.loads(resp2)
+    except Exception as e:
+        print(f"Architect JSON parse failed: {e}")
+        data = {}
     return data

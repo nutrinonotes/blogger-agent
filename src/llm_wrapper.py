@@ -8,7 +8,7 @@ load_dotenv()
 # Set API key from env
 openai.api_key = os.getenv("OPENAI_API_KEY")
 
-def llm_complete(prompt: str, temperature: float = 0.2, max_tokens: int = 800, model: str = "gpt-4o-mini") -> str:
+def llm_complete(prompt: str, temperature: float = 0.2, max_tokens: int = 800, model: str = "gpt-4o-mini", json_mode: bool = False) -> str:
     """
     Generate a completion from the LLM.
     
@@ -31,11 +31,12 @@ def llm_complete(prompt: str, temperature: float = 0.2, max_tokens: int = 800, m
         resp = client.chat.completions.create(
             model=model,
             messages=[
-                {"role": "system", "content": "You are an expert writer."},
+                {"role": "system", "content": "You are an expert writer." + (" You output JSON." if json_mode else "")},
                 {"role": "user", "content": prompt}
             ],
             temperature=temperature,
-            max_tokens=max_tokens
+            max_tokens=max_tokens,
+            response_format={"type": "json_object"} if json_mode else None
         )
         return resp.choices[0].message.content
     except Exception as e:
